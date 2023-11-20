@@ -6,6 +6,14 @@ from sklearn.linear_model import LinearRegression
 
 
 def linearRegression():
+    '''
+    Demonstrate a machine learning linear regression example
+    '''
+    
+    # Cobble up some random data for training our model.
+    # Generate 20 random points between 0 and 30 for the X axis.
+    # Generate 20 y values randomly distributed around the X points.
+    
     X = 30 * np.random.random((20, 1))
     # Just take the default mu and sigma (mean and std dev)
     y = 0.5 * X + 1.0 + np.random.normal(size=X.shape)
